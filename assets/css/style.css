@@ -1,33 +1,50 @@
-*{
-    margin : 0px;
-    padding : 0px;
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: "Rubik", sans-serif;
 }
 
-.navbar{
- position:fixed;
- z-index: 10;
- color: #ffffff;
- width: 100%;
- 
- 
-}
-
-.navbar-brand{
-   margin: 0;
-   padding: 0;
+.header img {
+    width: 100%;
+    height: auto;
 
 }
-.navbar-brand img{
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    color: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 1px #222;
+    backdrop-filter: blur(5px);
+
+
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-brand img {
     width: 5%;
     height: auto;
 }
-#Carrusel{
-    display: grid;
+
+#Carrusel {
+    display: inline-flex;
     width: 100%;
     height: auto;
-    
-    
+    justify-content: center;
+    background-color: #000000;
+}
+
+#Carrusel .container {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+
 }
 
 #Carrusel .carousel-indicators button {
@@ -36,4 +53,23 @@
     margin: 4px;
     background-color: #ccc;
     border-radius: 50%;
+}
+
+#Card-Section {
+    background: #000000;
+   ; 
+}
+
+#Card-Section .row {
+    display: flex;
+    width: 100%;
+    background: green;
+   
+   
+
+}
+
+#Card-Section .card-header {
+    background: rgb(3, 192, 240);
+
 }
