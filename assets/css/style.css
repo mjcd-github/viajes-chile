@@ -1,4 +1,39 @@
 *{
     margin : 0px;
     padding : 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar{
+ position:fixed;
+ z-index: 10;
+ color: #ffffff;
+ width: 100%;
+ 
+ 
+}
+
+.navbar-brand{
+   margin: 0;
+   padding: 0;
+
+}
+.navbar-brand img{
+    width: 5%;
+    height: auto;
+}
+#Carrusel{
+    display: grid;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+#Carrusel .carousel-indicators button {
+    width: 14px;
+    height: 14px;
+    margin: 4px;
+    background-color: #ccc;
+    border-radius: 50%;
 }
