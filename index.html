@@ -24,23 +24,23 @@
 <!-- Inicio Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand ms-5" href="#"><img src="./assets/img/viajes.svg" alt="logo viajes chile"><span class="ms-2">Viajes Chile</span></a>
+      <a class="navbar-brand ms-5" href="#"><img src="./assets/img/viajes.svg" alt="logo viajes chile"><span class="ms-2 text-light">Viajes Chile</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto me-5">
+          <li class="nav-item ">
+            <a class="nav-link active text-light " aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quienes Somos</a>
+            <a class="nav-link text-light" href="#">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Destacados</a>
+            <a class="nav-link text-light" href="#">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link text-light" href="#">Contacto</a>
           </li>
         </ul>
         
@@ -48,6 +48,36 @@
     </div>
   </nav>
   <!-- Fin Navbar -->
+
+  <!-- Inicio Carrusel -->
+   <section id="Carrusel" class="">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active mt-5" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" class="mt-5" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" class="mt-5" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/carousel.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </section>
 
 
 
