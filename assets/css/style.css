@@ -1,4 +1,14 @@
 *{
     margin : 0px;
     padding : 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar{
+    background: transparent !important;
+}
+
+.navbar-brand img{
+    width: 5%;
+    height: auto;
 }
