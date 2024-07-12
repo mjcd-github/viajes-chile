@@ -3,7 +3,9 @@
     padding: 0px;
     font-family: "Rubik", sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .header img {
     width: 100%;
     height: auto;
@@ -46,11 +48,17 @@
     margin: 10px;
 
 }
-
+/* #Carrusel .carousel-indicators{
+    width: auto;
+    height: 18px;
+    background: green;
+    border-radius: 20%;
+} */
 #Carrusel .carousel-indicators button {
     width: 14px;
     height: 14px;
     margin: 4px;
+    
     background-color: #ccc;
     border-radius: 50%;
 }
@@ -69,6 +77,33 @@
 }
 
 #Card-Section .card-header {
-    background: rgb(3, 192, 240);
+    background: #03c0f0;
 
+}
+
+#Section-Destacados{
+    background-color: #000000;
+}
+
+#Section-Contacto{
+    background-color: #000000;
+}
+
+#footer{
+    width: 100%;
+    background:#03c0f0;
+    justify-content: middle;
+}
+
+@media (max-width: 768px){
+    #Card-Section .card-body{
+        order: 1 !important;
+        
+
+    }
+
+    #Card-Section .card-header{
+        order: 0 !important;
+        background: #03c0f0;
+    }
 }
