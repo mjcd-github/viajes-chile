@@ -9,5 +9,5 @@ El sitio consta de:
 - carrusel
 - quienes somos
 - destacados
-- Contato
+- Contacto
 - Footer
