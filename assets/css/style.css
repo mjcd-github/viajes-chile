@@ -1,33 +1,77 @@
-*{
-    margin : 0px;
-    padding : 0px;
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: "Rubik", sans-serif;
 }
 
-.navbar{
- position:fixed;
- z-index: 10;
- color: #ffffff;
- width: 100%;
- 
- 
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar-brand{
-   margin: 0;
-   padding: 0;
+/* Navbar */
+.header img {
+    width: 100%;
+    height: auto;
 
 }
-.navbar-brand img{
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    color: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 1px #222;
+    backdrop-filter: blur(5px);
+}
+
+.nav-link {
+    transition: transform 0.5s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-brand img {
     width: 5%;
     height: auto;
 }
-#Carrusel{
-    display: grid;
+
+hr {
+    width: 90%;
+    margin: 1px auto;
+    color: #03c0f0;
+    padding-bottom: 15px;
+}
+
+header {
+    background: #000000;
+}
+
+/* Sección Carrusel */
+#Carrusel {
+    display: inline-flex;
     width: 100%;
     height: auto;
-    
-    
+    justify-content: center;
+    background-color: #000000;
+}
+
+#Carrusel .container {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 550px;
 }
 
 #Carrusel .carousel-indicators button {
@@ -36,4 +80,124 @@
     margin: 4px;
     background-color: #ccc;
     border-radius: 50%;
+}
+
+/* Sección Quienes somos */
+#Card-Section {
+    background: #000000;
+    width: 100%;
+}
+
+#Card-Section .card {
+    border: solid 0;
+}
+
+#Card-Section .row {
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+}
+
+#Card-Section .card-header {
+    background: #03c0f0;
+
+}
+
+#Card-Section .card-body {
+    background: #000000;
+    color: #ffffff;
+}
+
+/* Sección destacados */
+#Section-Destacados {
+    background-color: #000000;
+}
+
+#Section-Destacados .card {
+    background: #03c0f0;
+    border: solid 0;
+    transition: transform 0.5s ease;
+}
+
+#Section-Destacados .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#Section-Destacados .card:hover {
+    transform: scale(1.1);
+}
+
+/* sección Contacto */
+#Section-Contacto {
+    background-color: #000000;
+}
+
+/* Footer */
+#pie {
+    width: 100%;
+    background: #03c0f0;
+    vertical-align: middle;
+}
+
+#pie a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+#pie i {
+    transition: transform 0.5s ease;
+
+}
+
+#pie i:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .navbar .container-fluid {
+        display: inline;
+    }
+
+    .navbar .container-fluid .logo img {
+        width: 30px;
+        height: auto;
+    }
+
+    .navbar .container-fluid .navbar-brand {
+        margin-left: 0px !important;
+    }
+
+    .navbar .container-fluid .logo {
+        text-align: left;
+    }
+
+    .navbar .container-fluid .botonav {
+        text-align: right;
+    }
+
+    header {
+        padding-top: 55px !important;
+    }
+
+    #Carrusel {
+        display: none;
+    }
+
+    #Card-Section .card-content .card-body {
+        order: 1 !important;
+    }
+
+    #Card-Section .card-content .card-header {
+        order: 0 !important;
+    }
+
+    #Section-Contacto .container .boton {
+        text-align: center;
+    }
 }
